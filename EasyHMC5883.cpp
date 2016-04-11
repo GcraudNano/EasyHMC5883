@@ -6,7 +6,7 @@
 #endif
 #ifdef __MBED__
 #   include <Timer.h>
-#   define degrees(rad) ((rad) * 180 / M_PI)
+#   define degrees(rad) ((rad) * 180 / static_cast<float>(M_PI))
 #endif
 #define LAMBDA(arglist, arrow, retType, body)	\
 ({                                              \
